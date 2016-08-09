@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": ".NET Core Launch (MSTest)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\IDE\\MSTest.exe",
+            "args": ["/testcontainer:${workspaceRoot}/test/bin/Debug/netcoreapp1.0/AMT.LinqExtensions.Tests.dll /runsettings:${workspaceRoot}/test/AMT.Tests.runsettings"],
+            "cwd": "${workspaceRoot}/test/bin/Debug/netcoreapp1.0/",
+            "stopAtEntry": false,
+            "externalConsole": false
+        }
+    ]
+}
