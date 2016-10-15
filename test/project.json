@@ -1,12 +1,12 @@
 {
-    "version": "0.1.0-*",
+    "version": "0.1.1-*",
 
     "testRunner": "xunit",
 
     "dependencies": {
         "AMT.LinqExtensions": {
             "target": "project",
-            "version": "0.1.0*"
+            "version": "0.1.1*"
         },
 
         "dotnet-test-xunit": "1.0.0-*",

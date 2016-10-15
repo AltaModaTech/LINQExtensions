@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v1.0": {
-      "AMT.LinqExtensions/0.1.0": {
+      "AMT.LinqExtensions/0.1.1": {
         "dependencies": {
           "System.Linq": "4.1.0"
         },
@@ -102,7 +102,7 @@
     }
   },
   "libraries": {
-    "AMT.LinqExtensions/0.1.0": {
+    "AMT.LinqExtensions/0.1.1": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

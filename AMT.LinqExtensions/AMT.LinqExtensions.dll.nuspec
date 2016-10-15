@@ -4,17 +4,19 @@
 <!--    <id>.\bin\Debug\netcoreapp1.0\AMT.LinqExtensions.dll</id>
 -->
     <id>AMT.LinqExtensions</id>
-    <version>0.1.0</version>
+    <version>0.1.1</version>
     <authors>JBurnett</authors>
     <owners>AltaModa Technologies</owners>
     <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
     <projectUrl>https://github.com/AltaModaTech/LINQExtensions</projectUrl>
+<!-- 
     <iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl>
+-->
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Extensions for LINQ</description>
     <releaseNotes></releaseNotes>
     <copyright>Copyright 2016, AltaModa Technologies</copyright>
-    <tags></tags>
+    <tags>LINQ</tags>
     <dependencies>
       <!-- 
       <dependency id="SampleDependency" version="1.0" />
