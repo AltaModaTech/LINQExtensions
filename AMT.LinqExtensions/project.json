@@ -1,0 +1,15 @@
+﻿{
+  "version": "0.1.1",
+  
+  "buildOptions": {
+    "outputName": "AMT.LinqExtensions"
+  },
+
+  "dependencies": {
+    "NETStandard.Library": "1.5.0"
+  },
+
+  "frameworks": {
+    "netstandard1.3": {}
+  }
+}
