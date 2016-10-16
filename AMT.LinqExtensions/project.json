@@ -1,4 +1,5 @@
 ﻿{
+  "title": "AMT LINQ Extensions",
   "version": "0.1.1",
   
   "buildOptions": {
@@ -11,5 +12,22 @@
 
   "frameworks": {
     "netstandard1.3": {}
-  }
+  },
+
+  "authors": [
+    "AltaModaTech"
+  ],
+  "description": "AltaModa Technologies LINQ Extensions",
+  
+  "packOptions": {
+    "owners": [
+      "AltaModaTech"
+    ],
+    "licenseUrl": "http://www.apache.org/licenses/LICENSE-2.0",
+    "requireLicenseAcceptance": false,
+    "tags": [
+      "LINQ"
+    ]
+  },
+  "projectUrl": "https://github.com/AltaModaTech/LINQExtensions"
 }
