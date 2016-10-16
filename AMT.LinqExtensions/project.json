@@ -2,9 +2,6 @@
   "title": "AMT LINQ Extensions",
   "version": "0.1.1",
   
-  "buildOptions": {
-    "outputName": "AMT.LinqExtensions"
-  },
 
   "dependencies": {
     "NETStandard.Library": "1.5.0"
@@ -20,6 +17,7 @@
   "description": "AltaModa Technologies LINQ Extensions",
   
   "packOptions": {
+    "projectUrl": "https://github.com/AltaModaTech/LINQExtensions",
     "owners": [
       "AltaModaTech"
     ],
@@ -28,6 +26,5 @@
     "tags": [
       "LINQ"
     ]
-  },
-  "projectUrl": "https://github.com/AltaModaTech/LINQExtensions"
+  }
 }
