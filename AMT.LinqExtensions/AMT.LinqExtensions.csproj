@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>AltaModa Technologies LINQ Extensions</Description>
+    <AssemblyCompany>AltaModa Technologies</AssemblyCompany>
+    <AssemblyTitle>AMT LINQ Extensions</AssemblyTitle>
+    <VersionPrefix>0.1.4</VersionPrefix>
+    <Authors>AltaModaTech</Authors>
+    <TargetFramework>netstandard1.0</TargetFramework>
+    <AssemblyName>AMT.LinqExtensions</AssemblyName>
+    <PackageId>AMT.LinqExtensions</PackageId>
+    <PackageTags>LINQ</PackageTags>
+    <PackageProjectUrl>https://github.com/AltaModaTech/LINQExtensions</PackageProjectUrl>
+    <PackageLicenseUrl>http://www.apache.org/licenses/LICENSE-2.0</PackageLicenseUrl>
+    <NetStandardImplicitPackageVersion>1.6.0</NetStandardImplicitPackageVersion>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyCopyrightAttribute>false</GenerateAssemblyCopyrightAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <GenerateAssemblyDescriptionAttribute>false</GenerateAssemblyDescriptionAttribute>
+  </PropertyGroup>
+
+</Project>
