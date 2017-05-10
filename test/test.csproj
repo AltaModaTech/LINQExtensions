@@ -2,12 +2,17 @@
 
   <PropertyGroup>
     <VersionPrefix>0.1.4</VersionPrefix>
-    <TargetFramework>netcoreapp1.0</TargetFramework>
-    <AssemblyName>test</AssemblyName>
-    <PackageId>test</PackageId>
-    <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
-    <PackageTargetFallback>$(PackageTargetFallback);dnxcore50;portable-net45+win8</PackageTargetFallback>
-    <RuntimeFrameworkVersion>1.0.4</RuntimeFrameworkVersion>
+    <!-- -->
+    <AssemblyName>Test.AMT.LinqExtensions</AssemblyName>
+    <!-- -->
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(OS)' == 'Windows_NT' ">
+      <TargetFrameworks>net452;netcoreapp1.0</TargetFrameworks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(OS)' != 'Windows_NT' ">
+      <TargetFramework>netcoreapp1.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
@@ -16,8 +21,8 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.0.0" />
-    <PackageReference Include="xunit.runner.visualstudio" Version="2.2.*" />
-    <PackageReference Include="xunit" Version="2.2.*" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.2.0" />
+    <PackageReference Include="xunit" Version="2.2.0" />
     <PackageReference Include="FluentAssertions" Version="4.19.*" />
   </ItemGroup>
 
