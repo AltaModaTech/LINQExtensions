@@ -24,6 +24,11 @@ namespace AMT.LinqExtensions
 			return elements.ElementAt(_randomizer.Next(0, elements.Count - 1));
 		}
 
+		public static T Random<T> (this IEnumerable<T> elements)
+		{
+			return elements.ElementAt(_randomizer.Next(0, elements.Count() - 1));
+		}
+
 		#endregion Public LINQ methods
 	}
 

@@ -34,6 +34,21 @@ namespace Test.AMT.LinqExtensions
 
 
 		[Fact]
+		public void random_element_from_int_list_by_IEnumerable()
+		{
+			List<int> list = new List<int>();
+			for (int i = 0; i < 250; ++i) { list.Add(i); }
+
+			IEnumerable<int> enumr = list;
+			foreach (var itr in enumr)
+			{
+				int curr = enumr.Random();
+				curr.Should().BeGreaterThan(-1);
+			}
+		}
+
+
+		[Fact]
 		public void random_element_from_single_item_list()
 		{
 			// Create a list with only 1 element
@@ -45,6 +60,25 @@ namespace Test.AMT.LinqExtensions
 			for (int i = 0; i < 5; ++i)
 			{
 				(list.Random()).Should().Be(knownInt);
+			}
+		}
+
+
+		[Fact]
+		public void random_element_from_()
+		{
+			
+			SortedList<int, string> list = new SortedList<int, string>();
+			for (int i = 0; i < 250; ++i) { list.Add(i, i.ToString()); }
+
+			// Get random elements from ~1/10 of the list.  The probability of sequential duplicates
+			//	increases when covering more of the available elements.
+			KeyValuePair<int, string> prev = new KeyValuePair<int, string>();
+			for (int i = 0; i < list.Count/10; ++i)
+			{
+				var curr = list.Random();
+				curr.Should().NotBe(prev);
+				prev = curr;
 			}
 		}
 
