@@ -5,7 +5,7 @@
     <!-- Assembly attributes -->
     <AssemblyName>AMT.LinqExtensions</AssemblyName>
     <AssemblyTitle>AMT LINQ Extensions</AssemblyTitle>
-    <Company>AltaModa Technologies</Company>
+    <Company>AltaModa Technologies, LLC</Company>
     <GenerateAssemblyCompanyAttribute />
     <GenerateAssemblyConfigurationAttribute />
     <GenerateAssemblyCopyrightAttribute />
@@ -37,9 +37,8 @@
       RepositoryUrl
     -->
     <Authors>AltaModaTech</Authors>
-    <Copyright>AltaModa Technologies</Copyright>
+    <Copyright>AltaModa Technologies, LLC</Copyright>
     <Description>A few LINQ Extensions which we find useful, and you may, too.</Description>
-    <PackageTags>LINQ</PackageTags>
     <PackageLicenseUrl>http://www.apache.org/licenses/LICENSE-2.0</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/AltaModaTech/LINQExtensions</PackageProjectUrl>
     <PackageTags>LINQ</PackageTags>
