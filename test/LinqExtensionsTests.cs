@@ -10,23 +10,27 @@ namespace Test.AMT.LinqExtensions
     // TODO: include when doing code coverage
     // [ExcludeFromCodeCoverage]
 
-	public class LinqRandomizerTests
+	public class LinqRandomizerTests : IClassFixture<TestDataFixture>
 	{
+		TestDataFixture _testData;
+
+		public LinqRandomizerTests(TestDataFixture testData)
+		{
+			_testData = testData;
+		}
+
 
 		#region Positive tests
 
 		[Fact]
 		public void random_element_from_int_list()
 		{
-			List<int> list = new List<int>();
-			for (int i = 0; i < 250; ++i) { list.Add(i); }
-
 			// Get random elements from ~1/10 of the list.  The probability of sequential duplicates
 			//	increases when covering more of the available elements.
 			int prev = -1;
-			for (int i = 0; i < list.Count/10; ++i)
+			for (int i = 0; i < _testData.TestList.Count/10; ++i)
 			{
-				int curr = list.Random();
+				int curr = _testData.TestList.Random();
 				curr.Should().NotBe(prev);
 				prev = curr;
 			}
@@ -36,10 +40,7 @@ namespace Test.AMT.LinqExtensions
 		[Fact]
 		public void random_element_from_int_list_by_IEnumerable()
 		{
-			List<int> list = new List<int>();
-			for (int i = 0; i < 250; ++i) { list.Add(i); }
-
-			IEnumerable<int> enumr = list;
+			IEnumerable<int> enumr = _testData.TestList;
 			foreach (var itr in enumr)
 			{
 				int curr = enumr.Random();
@@ -67,7 +68,6 @@ namespace Test.AMT.LinqExtensions
 		[Fact]
 		public void random_element_from_()
 		{
-			
 			SortedList<int, string> list = new SortedList<int, string>();
 			for (int i = 0; i < 250; ++i) { list.Add(i, i.ToString()); }
 
