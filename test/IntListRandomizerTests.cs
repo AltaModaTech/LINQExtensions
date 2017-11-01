@@ -10,11 +10,11 @@ namespace Test.AMT.LinqExtensions
     // TODO: include when doing code coverage
     // [ExcludeFromCodeCoverage]
 
-	public class LinqRandomizerTests : IClassFixture<TestDataFixture>
+	public class IntListRandomizerTests : IClassFixture<IntListTestFixture>
 	{
-		TestDataFixture _testData;
+		IntListTestFixture _testData;
 
-		public LinqRandomizerTests(TestDataFixture testData)
+		public IntListRandomizerTests(IntListTestFixture testData)
 		{
 			_testData = testData;
 		}

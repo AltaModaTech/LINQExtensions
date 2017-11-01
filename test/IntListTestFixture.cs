@@ -6,12 +6,12 @@ using Xunit;
 namespace Test.AMT.LinqExtensions
 {
 
-    public class TestDataFixture : IDisposable
+    public class IntListTestFixture : IDisposable
     {
 
         public List<int> TestList { get; set; }
 
-        public TestDataFixture()
+        public IntListTestFixture()
         {
 			TestList = new List<int>();
 			for (int i = 0; i < 250; ++i)
