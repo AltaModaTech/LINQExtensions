@@ -17,7 +17,7 @@ namespace Test.AMT.LinqExtensions
         public IntListTestFixture()
         {
 			TestList = new List<int>();
-			for (int i = MinTestValue; i < MaxTestValue; ++i)
+			for (int i = MinTestValue; i <= MaxTestValue; ++i)
             {
                 TestList.Add(i);
             }
