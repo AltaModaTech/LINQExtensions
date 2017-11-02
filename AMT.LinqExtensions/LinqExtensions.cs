@@ -21,9 +21,14 @@ namespace AMT.LinqExtensions
 		///<exception cref="System.ArgumentOutOfRangeException">Thrown when the list is empty</exception>
 		public static T Random<T> (this ICollection<T> elements)
 		{
-			return elements.ElementAt(_randomizer.Next(0, elements.Count - 1));
+			// Delegate to overload taking IEnumerable 
+			return Random<T>(elements as IEnumerable<T>);
 		}
 
+		///<summary>Returns a random element using an enumerable</summary>
+		///<typeparam name="T">The element type of the enumerable</typeparam>
+		///<param cref="elements">An IEnumerable of the specified type <seealso cref="T" /></param>
+		///<exception cref="System.ArgumentOutOfRangeException">Thrown when the list is empty</exception>
 		public static T Random<T> (this IEnumerable<T> elements)
 		{
 			return elements.ElementAt(_randomizer.Next(0, elements.Count() - 1));
