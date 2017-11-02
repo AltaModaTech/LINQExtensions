@@ -14,6 +14,7 @@ namespace Test.AMT.LinqExtensions
 	{
 		IntListTestFixture _testData;
 
+
 		public IntListRandomizerTests(IntListTestFixture testData)
 		{
 			_testData = testData;
@@ -25,14 +26,10 @@ namespace Test.AMT.LinqExtensions
 		[Fact]
 		public void random_element_from_int_list()
 		{
-			// Get random elements from ~1/10 of the list.  The probability of sequential duplicates
-			//	increases when covering more of the available elements.
-			int prev = -1;
-			for (int i = 0; i < _testData.TestList.Count/10; ++i)
+			for (int i = 0; i < _testData.TestList.Count; ++i)
 			{
 				int curr = _testData.TestList.Random();
-				curr.Should().NotBe(prev);
-				prev = curr;
+				curr.Should().BeGreaterOrEqualTo(IntListTestFixture.MinTestValue);
 			}
 		}
 
@@ -44,7 +41,7 @@ namespace Test.AMT.LinqExtensions
 			foreach (var itr in enumr)
 			{
 				int curr = enumr.Random();
-				curr.Should().BeGreaterThan(-1);
+				curr.Should().BeGreaterOrEqualTo(IntListTestFixture.MinTestValue);
 			}
 		}
 
@@ -73,12 +70,11 @@ namespace Test.AMT.LinqExtensions
 
 			// Get random elements from ~1/10 of the list.  The probability of sequential duplicates
 			//	increases when covering more of the available elements.
-			KeyValuePair<int, string> prev = new KeyValuePair<int, string>();
-			for (int i = 0; i < list.Count/10; ++i)
+			for (int i = 0; i < list.Count; ++i)
 			{
 				var curr = list.Random();
-				curr.Should().NotBe(prev);
-				prev = curr;
+				curr.Key.Should().BeGreaterOrEqualTo(IntListTestFixture.MinTestValue);
+				curr.Value.Should().BeEquivalentTo(curr.Key.ToString());
 			}
 		}
 
