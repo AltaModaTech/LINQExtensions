@@ -2,10 +2,11 @@
 
   <PropertyGroup>
     <VersionPrefix>2.0.0</VersionPrefix>
-    <!-- Assembly attributes -->
+
     <AssemblyName>AMT.LinqExtensions</AssemblyName>
     <AssemblyTitle>AMT LINQ Extensions</AssemblyTitle>
     <Company>AltaModa Technologies, LLC</Company>
+
     <GenerateAssemblyCompanyAttribute />
     <GenerateAssemblyConfigurationAttribute />
     <GenerateAssemblyCopyrightAttribute />
@@ -16,26 +17,7 @@
     <GenerateAssemblyTitleAttribute />
     <GenerateAssemblyVersionAttribute />
     <GenerateNeutralResourcesLanguageAttribute />
-    <!-- NuGet properties -->
-    <!-- as per https://docs.microsoft.com/en-us/dotnet/articles/core/tools/csproj#nuget-metadata-properties -->
-    <!-- Properties and their defaults
-      PackageId - AssemblyName
-      PackageRequireLicenseAcceptance - false
-      PackageVersion - Version
-      RepositoryType - git
-    -->
-    <!-- Unused properties
-      BuildOutputTargetFolder
-      ContentTargetFolders
-      IncludeBuildOutput
-      IncludeContentInPack
-      IncludeSymbols
-      IsTool
-      MinClientVersion
-      NoPackageAnalysis
-      PackageIconUrl
-      RepositoryUrl
-    -->
+
     <Authors>AltaModaTech</Authors>
     <Copyright>AltaModa Technologies, LLC</Copyright>
     <Description>A few LINQ Extensions which we find useful, and you may, too.</Description>
