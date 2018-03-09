@@ -11,7 +11,7 @@ namespace Test.AMT.LinqExtensions
 
         public List<int> TestList { get; set; }
         public const int MinTestValue = 0;
-        public const int MaxTestValue = 250;
+        public const int MaxTestValue = 9999;
 
 
         public IntListTestFixture()
