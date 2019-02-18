@@ -122,11 +122,11 @@ namespace Test.AMT.LinqExtensions
 
 			// Test via the method taking ICollection
 			Action act = () => list.Random();
-			act.ShouldThrow<ArgumentOutOfRangeException>();
+			act.Should().Throw<ArgumentOutOfRangeException>();
 
 			// Test via the method taking IEnumerable
 			act = () => (list as IEnumerable<string>).Random();
-			act.ShouldThrow<ArgumentOutOfRangeException>();
+			act.Should().Throw<ArgumentOutOfRangeException>();
 		}
 
 		#endregion Negative tests
