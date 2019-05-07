@@ -1,8 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
+  <Import Project="../common.props" />
+
   <PropertyGroup>
-    <Copyright>AltaModa Technologies, LLC</Copyright>
-    <VersionPrefix>2.2.0</VersionPrefix>
     <AssemblyName>Test.AMT.LinqExtensions</AssemblyName>
     <IsPackable>false</IsPackable>
   </PropertyGroup>

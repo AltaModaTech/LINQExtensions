@@ -1,25 +1,20 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
+  <Import Project="../common.props" />
+
   <PropertyGroup>
-    <VersionPrefix>2.2.0</VersionPrefix>
 
     <AssemblyName>AMT.LinqExtensions</AssemblyName>
     <AssemblyTitle>AMT LINQ Extensions</AssemblyTitle>
-    <Company>AltaModa Technologies, LLC</Company>
 
-    <GenerateAssemblyCompanyAttribute />
-    <GenerateAssemblyConfigurationAttribute />
     <GenerateAssemblyCopyrightAttribute />
     <GenerateAssemblyDescriptionAttribute />
     <GenerateAssemblyFileVersionAttribute />
     <GenerateAssemblyInformationalVersionAttribute />
-    <GenerateAssemblyProductAttribute />
     <GenerateAssemblyTitleAttribute />
     <GenerateAssemblyVersionAttribute />
     <GenerateNeutralResourcesLanguageAttribute />
 
-    <Authors>AltaModaTech</Authors>
-    <Copyright>AltaModa Technologies, LLC</Copyright>
     <Description>A few LINQ Extensions which we find useful, and you may, too.</Description>
     <PackageLicenseUrl>http://www.apache.org/licenses/LICENSE-2.0</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/AltaModaTech/LINQExtensions</PackageProjectUrl>
