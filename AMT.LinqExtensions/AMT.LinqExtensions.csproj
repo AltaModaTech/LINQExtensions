@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <VersionPrefix>2.1.0</VersionPrefix>
+    <VersionPrefix>2.2.0</VersionPrefix>
 
     <AssemblyName>AMT.LinqExtensions</AssemblyName>
     <AssemblyTitle>AMT LINQ Extensions</AssemblyTitle>
@@ -28,10 +28,10 @@
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(OS)' == 'Windows_NT' ">
-    <TargetFrameworks>netstandard1.0;netstandard1.1;netstandard2.0;net452;net46;net461;net462;net47;net471;net472;</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0;net461;net462;net47;net471;net472;</TargetFrameworks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(OS)' != 'Windows_NT' ">
-    <TargetFrameworks>netstandard1.0;netstandard1.1;netstandard2.0</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0</TargetFrameworks>
   </PropertyGroup>
 
 </Project>

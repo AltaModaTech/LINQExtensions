@@ -2,16 +2,16 @@
 
   <PropertyGroup>
     <Copyright>AltaModa Technologies, LLC</Copyright>
-    <VersionPrefix>2.1.0</VersionPrefix>
+    <VersionPrefix>2.2.0</VersionPrefix>
     <AssemblyName>Test.AMT.LinqExtensions</AssemblyName>
     <IsPackable>false</IsPackable>
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(OS)' == 'Windows_NT' ">
-      <TargetFrameworks>netcoreapp1.0;netcoreapp1.1;netcoreapp2.0;netcoreapp2.1;net452;net46;net461;net462;net47;net471;net472;</TargetFrameworks>
+      <TargetFrameworks>netcoreapp2.0;netcoreapp2.1;net461;net462;net47;net471;net472;</TargetFrameworks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(OS)' != 'Windows_NT' ">
-      <TargetFrameworks>netcoreapp1.0;netcoreapp1.1;netcoreapp2.0;netcoreapp2.1</TargetFrameworks>
+      <TargetFrameworks>netcoreapp2.0;netcoreapp2.1</TargetFrameworks>
   </PropertyGroup>
 
   <ItemGroup>
