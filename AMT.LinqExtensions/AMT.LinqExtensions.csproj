@@ -16,7 +16,7 @@
     <GenerateNeutralResourcesLanguageAttribute />
 
     <Description>A few LINQ Extensions which we find useful, and you may, too.</Description>
-    <PackageLicenseUrl>http://www.apache.org/licenses/LICENSE-2.0</PackageLicenseUrl>
+    <PackageLicense>http://www.apache.org/licenses/LICENSE-2.0</PackageLicense>
     <PackageProjectUrl>https://github.com/AltaModaTech/LINQExtensions</PackageProjectUrl>
     <PackageTags>LINQ</PackageTags>
     <Title>LINQ Extensions by AltaModa Technologies</Title>
