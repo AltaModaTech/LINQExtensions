@@ -7,11 +7,16 @@
     <IsPackable>false</IsPackable>
   </PropertyGroup>
 
+<!--
+  .NET Core 3.1 (LTS) EOL 12/3/2022
+  .NET Core 2.1 (LTS) EOL 8/21/2021
+  .NET Core 1.1 EOL 6/27/2019
+-->
   <PropertyGroup Condition=" '$(OS)' == 'Windows_NT' ">
-      <TargetFrameworks>netcoreapp2.0;netcoreapp2.1;net461;net462;net47;net471;net472;</TargetFrameworks>
+      <TargetFrameworks>netcoreapp3.1;netcoreapp2.1;net461;net462;net47;net471;net472;</TargetFrameworks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(OS)' != 'Windows_NT' ">
-      <TargetFrameworks>netcoreapp2.0;netcoreapp2.1</TargetFrameworks>
+      <TargetFrameworks>netcoreapp3.1;netcoreapp2.1</TargetFrameworks>
   </PropertyGroup>
 
   <ItemGroup>
