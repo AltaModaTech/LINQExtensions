@@ -10,7 +10,7 @@ if ($branch -ne 'master') {
 }
 
 $projPaths = @(
-    "."
+    "./AMT.LinqExtensions"
 )
 
 # Ensure everything is built
