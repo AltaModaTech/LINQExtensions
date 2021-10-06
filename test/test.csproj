@@ -13,7 +13,7 @@
   .NET Core 1.1 EOL 6/27/2019
 -->
   <PropertyGroup>
-      <TargetFrameworks>netcoreapp3.1;netcoreapp2.1;net5.0</TargetFrameworks>
+      <TargetFrameworks>netcoreapp3.1;net5.0;net6.0</TargetFrameworks>
   </PropertyGroup>
 
   <ItemGroup>
