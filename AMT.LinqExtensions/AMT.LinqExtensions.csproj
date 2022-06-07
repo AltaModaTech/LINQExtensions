@@ -16,22 +16,11 @@
     <GenerateNeutralResourcesLanguageAttribute />
 
     <Description>A few LINQ Extensions we find useful.</Description>
-    <PackageReleaseNotes>Supports .NET Core 3.1, .NET 5.0, &amp; .NET 6.0</PackageReleaseNotes>
+    <PackageReleaseNotes>Supports .NET 6.0</PackageReleaseNotes>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/AltaModaTech/LINQExtensions</PackageProjectUrl>
     <PackageTags>LINQ</PackageTags>
     <Title>LINQ Extensions by AltaModa Technologies</Title>
-  </PropertyGroup>
-
-<!--
-  .NET 6.0 (LTS) EOL 11/8/2024
-  .NET Core 3.1 (LTS) EOL 12/3/2022
-  .NET 5.0 EOL 5/8/2022
-  .NET Core 2.1 (LTS) EOL 8/21/2021
-  .NET Core 1.1 EOL 6/27/2019
--->
-  <PropertyGroup>
-    <TargetFrameworks>netstandard2.1;net5.0;net6.0</TargetFrameworks>
   </PropertyGroup>
 
 </Project>
