@@ -9,10 +9,7 @@
 
     <GenerateAssemblyCopyrightAttribute />
     <GenerateAssemblyDescriptionAttribute />
-    <GenerateAssemblyFileVersionAttribute />
-    <GenerateAssemblyInformationalVersionAttribute />
     <GenerateAssemblyTitleAttribute />
-    <GenerateAssemblyVersionAttribute />
     <GenerateNeutralResourcesLanguageAttribute />
 
     <Description>A few LINQ Extensions we find useful.</Description>
@@ -22,5 +19,12 @@
     <PackageTags>LINQ</PackageTags>
     <Title>LINQ Extensions by AltaModa Technologies</Title>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="gitversion.msbuild" Version="5.10.*">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
 
 </Project>
