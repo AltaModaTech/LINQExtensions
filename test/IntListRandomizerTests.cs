@@ -129,6 +129,29 @@ namespace Test.AMT.LinqExtensions
 			act.Should().Throw<ArgumentOutOfRangeException>();
 		}
 
+
+		[Fact]
+		public void verify_excp_after_all_excluded()
+		{
+			// Build a list and copy it to exclusions
+			List<string> list = new List<string>();
+			list.Add("one");
+			list.Add("two");
+			string[] exclusions = new string[list.Count];
+			list.CopyTo(exclusions);
+
+			// Since all the list values will be excluded, the
+			//	exception will occur.
+
+			// Test via the method taking ICollection
+			Action act = () => list.Random(exclusions);
+			act.Should().Throw<AllElementsExcluded>();
+
+			// Test via the method taking IEnumerable
+			act = () => (list as IEnumerable<string>).Random(exclusions);
+			act.Should().Throw<AllElementsExcluded>();
+		}
+
 		#endregion Negative tests
 		
 	}
